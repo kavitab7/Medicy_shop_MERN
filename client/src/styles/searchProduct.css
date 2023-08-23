@@ -1,0 +1,49 @@
+/* .searchProduct .row {
+    width: 100vw;
+    margin-left: -50px;
+} */
+.searchProduct {
+    margin-left: 20px;
+}
+
+.searchProduct .card-title {
+    height: 15vh;
+}
+
+.searchProduct .card {
+    background-color: white;
+    width: 18rem;
+}
+
+.searchProduct .card-name-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.searchProduct .card-price {
+    color: green;
+    font-weight: bold;
+}
+
+/* 
+.searchProduct button {
+    border-radius: 0;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+} */
+
+.searchProduct .card-text {
+    color: rgb(90, 89, 89);
+}
+
+.searchProduct .card img:hover {
+    transform: scale(0.9);
+}
+
+/* .searchProduct .card-title {
+    height: 8vh;
+} */

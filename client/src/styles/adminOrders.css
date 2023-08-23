@@ -1,0 +1,77 @@
+.thead {
+    background-color: beige;
+    background: #79c9a6;
+}
+
+.adminProducts .card {
+    width: 18rem;
+}
+
+@media screen and (max-width:1110px) {
+
+    .adminProducts {
+        width: 100vw;
+        padding: 25px;
+    }
+
+    .adminProducts .card {
+        width: 15rem;
+    }
+
+    .adminProducts .card-body {
+        height: 25vh;
+    }
+
+    .adminProducts .card-title {
+        font-size: 1.6vw;
+    }
+
+    .adminProducts .card img {
+
+        height: 40%;
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:520px) {
+    table {
+        width: 50%;
+        font-size: 2.0vw;
+    }
+
+    .ant-select-selection-item {
+        font-size: 2.2vw;
+    }
+
+    .dashboard-menu {
+        width: 100vw;
+        font-size: 3vw;
+    }
+
+    .adminProducts .card {
+        width: 10rem;
+        height: 20vh;
+    }
+
+    .adminProducts .card-body {
+        height: 15vh;
+    }
+
+    .adminProducts .card img {
+        padding: 0px;
+        padding-top: 5px;
+        padding-left: 49px;
+
+    }
+
+    .btn-success {
+        width: fit-content;
+        font-size: 2vw;
+    }
+
+    /* .adminProducts .card {
+
+        height: 70%;
+        width: 80%;
+    } */
+}

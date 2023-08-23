@@ -1,0 +1,123 @@
+.cart-page {
+    margin-top: 64px;
+}
+
+.cart-page h1 {
+    padding: 15px !important;
+    font-family: "roboto", sans-serif;
+    font-weight: normal;
+    color: green;
+}
+
+.cart-page h1>p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.cart-page .card {
+    padding: 5px !important;
+    height: 155px !important;
+    margin-bottom: 9px !important;
+    width: 43rem;
+}
+
+.cart-page .cart-remove-btn {
+    display: flex;
+    align-items: center;
+}
+
+.cart-page .cart-summary {
+    text-align: center;
+    /* margin-top: -140px !important; */
+}
+
+.cart-page .cart-img {
+    width: 90%;
+    height: 90%;
+}
+
+.cart-product-detail {
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width:1120px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cart-page .cart-summary {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: center; */
+        /* align-items: center; */
+        width: 100%;
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width:770px) {
+    .cart-page .card {
+        width: 37rem;
+    }
+
+    .cart-product-detail {
+        width: 40%;
+        margin-bottom: 5px;
+    }
+
+    .product {
+        width: 30%;
+    }
+
+    .cart-remove-btn {
+        justify-content: flex-start;
+        margin-top: 30px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .btn-danger {
+        width: fit-content;
+        font-size: 2vw;
+    }
+
+    .cart-product-detail {
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width:415px) {
+    .cart-product-detail {
+        width: 25%;
+        margin-bottom: 5px;
+    }
+
+    .cart-remove-btn {
+        margin-top: 5px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    .product {
+        width: 25%;
+    }
+
+    .cart-product-detail {
+        width: 20%;
+        margin-bottom: 0px;
+        height: 80%;
+    }
+
+}
+
+@media screen and (max-width:270px) {
+    .product {
+        width: 15%;
+    }
+
+    .card img {
+        padding: 0px;
+        padding-left: 0px;
+    }
+}

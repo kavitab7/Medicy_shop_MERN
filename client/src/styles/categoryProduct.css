@@ -1,0 +1,91 @@
+/* ================
+====category product 
+=================== */
+
+.category {
+    flex-wrap: wrap;
+    margin-top: 80px !important;
+}
+
+.category .row {
+    width: 90vw;
+}
+
+.card-title {
+    height: 25vh;
+}
+
+.category .card {
+    background-color: white;
+    width: 18rem;
+    margin: 15px;
+}
+
+.category .card-name-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.category .card-price {
+    color: green;
+    font-weight: bold;
+}
+
+.category button {
+    border-radius: 0;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.category .card-text {
+    color: rgb(90, 89, 89);
+}
+
+.category .card img:hover {
+    transform: scale(0.9);
+}
+
+@media screen and (max-width:600px) {
+
+    .category .flex-wrap {
+        justify-content: center;
+    }
+
+    .searchProduct .btn-details {
+        margin-bottom: 0px;
+    }
+}
+
+@media screen and (max-width:500px) {
+
+    .searchProduct .card-title,
+    .category .card-title {
+        height: 10vh;
+    }
+
+    .searchProduct .card img,
+    .category .card img {
+        padding: 21px;
+        height: 141px;
+        width: 187px;
+        padding-left: 88px;
+    }
+}
+
+@media screen and (max-width:400px) {
+
+    .searchProduct .card-title,
+    .category .card-title {
+        height: 3vh;
+    }
+
+}
+
+/* 
+.category .card-img-top {
+    height: 300px !important;
+} */

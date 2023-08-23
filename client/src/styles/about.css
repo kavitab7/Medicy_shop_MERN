@@ -1,0 +1,31 @@
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 80vh;
+    width: 95vw; */
+    height: 80vh;
+    background-image: url("../Images/about.jpg");
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: gray(3px);
+    margin: 30px;
+    color: black;
+
+}
+
+.content {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+
+    font-weight: 600;
+    font-size: 1.6vw;
+    backdrop-filter: grayscale(5);
+    background: rgba(21 210 255 / 20%);
+}
