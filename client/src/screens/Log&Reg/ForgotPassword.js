@@ -34,22 +34,26 @@ export default function ForgotPassword() {
 
     return (
         <Layout title={'Forgot Password '}>
-            <h1>Forgot Password </h1>
-            <form onSubmit={handleSubmit} >
+            <div className="login">
+                <div className="login-info">
+                    <h1>Forgot Password </h1>
+                    <form onSubmit={handleSubmit} >
 
-                <div className="mb-3">
-                    <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="form-control" id="exampleInputEmail1" placeholder='Enter your Email' required />
-                </div>
+                        <div className="mb-3">
+                            <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="form-control" id="exampleInputEmail1" placeholder='Enter your Email' required />
+                        </div>
 
-                <div className="mb-3">
-                    <input type="password" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} className="form-control" id="exampleInputPassword1" placeholder='Enter your Password' required />
-                </div>
-                <div className="mb-3">
-                    <input type="text" value={answer} onChange={(e) => setAnswer(e.target.value)} className="form-control" id="exampleInputPassword1" placeholder='Enter your favorite place' required />
-                </div>
+                        <div className="mb-3">
+                            <input type="password" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} className="form-control" id="exampleInputPassword1" placeholder='Enter your Password' required />
+                        </div>
+                        <div className="mb-3">
+                            <input type="text" value={answer} onChange={(e) => setAnswer(e.target.value)} className="form-control" id="exampleInputPassword1" placeholder='Enter your favorite place' required />
+                        </div>
 
-                <button type="submit" className="btn btn-primary">Reset</button>
-            </form>
+                        <button type="submit" className="btn btn-login">Reset</button>
+                    </form>
+                </div>
+            </div>
         </Layout>
 
     )

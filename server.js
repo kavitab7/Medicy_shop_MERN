@@ -5,6 +5,7 @@ const morgan = require('morgan')
 const connectDB = require('./config/db')
 const categoryRoutes = require('./routes/categoryRoutes')
 const productRoutes = require('./routes/productRoutes')
+const path = require('path')
 dotenv.config();
 
 const app = express()
@@ -15,15 +16,15 @@ app.use(bodyparser.urlencoded({ extended: false }));
 app.use(bodyparser.json());
 app.use(express.json())
 app.use(morgan('dev'))
-
+app.use(express.static(path.join(__dirname, './client/build')))
 
 //routes
 app.use('/api/v1/auth', routes)
 app.use('/api/v1/category', categoryRoutes)
 app.use('/api/v1/product', productRoutes)
 
-app.get("/", (req, res) => {
-    res.send("<h1>Welcome to ecommerce app</h1>");
+app.use("*", function (req, res) {
+    res.sendFile(path.join(__dirname, "./client/build/index.html"));
 });
 
 //PORT
