@@ -61,3 +61,25 @@
     color: #000000;
     border: 1px solid #0e0b41;
 }
+
+
+@media only screen and (max-width:660px) {
+    .login-info {
+        width: 70%;
+    }
+
+    .form-control,
+    .btn-login {
+        width: 60vw;
+    }
+
+    .login-img img {
+        width: 120%;
+        height: 120%;
+    }
+
+    .login {
+        height: 135vh;
+    }
+
+}
