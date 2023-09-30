@@ -69,7 +69,11 @@
     }
 
     .form-control,
+<<<<<<< HEAD
     .btn-login,
+=======
+    .btn-login ,
+>>>>>>> 677171d0e535c178558c5bb163570d8e54b09a1c
     .btn-forget {
         width: 60vw;
     }
@@ -93,4 +97,8 @@
     .login {
         height: 115vh;
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 677171d0e535c178558c5bb163570d8e54b09a1c

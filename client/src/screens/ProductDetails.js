@@ -10,6 +10,7 @@ export default function ProductDetails() {
     const [cart, setCart] = useCart();
     const navigate = useNavigate();
     const params = useParams();
+      const [cart, setCart] = useCart();
     const [product, setPtoduct] = useState({})
     const [relatedProducts, setRelatedProducts] = useState([])
 
@@ -65,7 +66,11 @@ export default function ProductDetails() {
                     </h6>
                     <h6>Description : {product.description}</h6>
                     <h6>Category : {product?.category?.name}</h6>
+<<<<<<< HEAD
                     <button className="btn btn-secondary ms-1"
+=======
+                   <button className="btn btn-secondary ms-1"
+>>>>>>> 677171d0e535c178558c5bb163570d8e54b09a1c
                         onClick={() => {
                             setCart([...cart, product]);
                             localStorage.setItem(
