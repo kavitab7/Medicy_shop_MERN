@@ -6,7 +6,7 @@ const { error } = require('console');
 const categoryModel = require('../models/categoryModel')
 const braintree = require("braintree");
 const dotenv = require("dotenv");
-
+const mongoose = require('mongoose')
 dotenv.config();
 
 //payment gateway

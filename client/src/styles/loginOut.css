@@ -69,7 +69,8 @@
     }
 
     .form-control,
-    .btn-login {
+    .btn-login,
+    .btn-forget {
         width: 60vw;
     }
 
@@ -82,4 +83,14 @@
         height: 135vh;
     }
 
+}
+
+@media only screen and (max-width:550px) {
+    .login-img img {
+        padding-bottom: 114px;
+    }
+
+    .login {
+        height: 115vh;
+    }
 }

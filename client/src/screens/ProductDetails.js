@@ -2,13 +2,17 @@ import React, { useEffect, useState } from 'react'
 import Layout from '../components/Layout'
 import { useNavigate, useParams } from 'react-router-dom'
 import axios from 'axios';
+import { toast } from 'react-hot-toast';
 import './../styles/productdetail.css';
+import { useCart } from '../Context/cart';
 
 export default function ProductDetails() {
+    const [cart, setCart] = useCart();
     const navigate = useNavigate();
     const params = useParams();
     const [product, setPtoduct] = useState({})
     const [relatedProducts, setRelatedProducts] = useState([])
+
 
     useEffect(() => {
         if (params?.slug) getProduct()
@@ -41,9 +45,9 @@ export default function ProductDetails() {
             <div className="row container product-details">
                 <div className="col-md-6">
                     <img
-                        src={`/api/v1/product/product-photo/${product._id}`}
+                        src={`/api/v1/product/product-photo/${product?._id}`}
                         className="card-img-top detail-img"
-                        alt={product.name}
+                        alt={product?.name}
                         height="300"
                         width={"350px"}
                     />
@@ -61,7 +65,16 @@ export default function ProductDetails() {
                     </h6>
                     <h6>Description : {product.description}</h6>
                     <h6>Category : {product?.category?.name}</h6>
-                    <button class="btn btn-secondary ms-1">ADD TO CART</button>
+                    <button className="btn btn-secondary ms-1"
+                        onClick={() => {
+                            setCart([...cart, product]);
+                            localStorage.setItem(
+                                "cart",
+                                JSON.stringify([...cart, product])
+                            );
+                            toast.success("Item Added to cart");
+                        }}
+                    >ADD TO CART</button>
                 </div>
             </div>
             <hr />
