@@ -8,17 +8,15 @@ import toast from 'react-hot-toast';
 
 export default function Search() {
     const [values, setValues] = useSearch();
-<<<<<<< HEAD
+
     const navigate = useNavigate();
-=======
-      const navigate = useNavigate();
->>>>>>> 677171d0e535c178558c5bb163570d8e54b09a1c
+
     const [cart, setCart] = useCart();
     return (
         <Layout title={"Search results"}>
             <div className="searchProduct ">
                 <div >
-                    <h1 className="text-center" >Search Resuts</h1>
+                    <h1 className="text-center" >Search Results</h1>
                     <h6 className='text-center'>
                         {values?.results.length < 1
                             ? "No Products Found"
@@ -41,11 +39,8 @@ export default function Search() {
                                         style: "currency",
                                         currency: "INR",
                                     })}</p>
-<<<<<<< HEAD
-                                    <button className="btn btn-details ms-1" onClick={() => navigate(`/product/${p.slug}`)}>More Details</button>
-=======
+
                                    <button className="btn btn-details ms-1" onClick={() => navigate(`/product/${p.slug}`)}>More Details</button>
->>>>>>> 677171d0e535c178558c5bb163570d8e54b09a1c
                                     <button className="btn btn-addCart ms-1" onClick={() => {
                                         setCart([...cart, p]);
                                         localStorage.setItem(
