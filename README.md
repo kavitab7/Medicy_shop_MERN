@@ -6,7 +6,6 @@ Click here to see website - https://shy-ruby-blackbuck-hose.cyclic.app/
 * SignUp/Forget Password
 * Product Searching/Filter
 * Payment gateways
-* SEO optimized
 * Category wise products
 * Admin/Users profile updates
 * CRUD operation on products
