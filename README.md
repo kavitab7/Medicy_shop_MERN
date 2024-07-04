@@ -1,5 +1,5 @@
 # MediCY - Ecommerce website
-Click here to see website - https://shy-ruby-blackbuck-hose.cyclic.app/
+Click here to see website - https://medicy-shop-mern.onrender.com/
 ### Created ecommerce website for medicine online shoping using React, MongoDB, Nodejs, Express .
 #### Having following functionalities - 
 * Login/Logout
